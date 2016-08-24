@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QRTabBar.h
 //  QRcode
 //
 //  Created by hzf on 16/8/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface QRTabBar : UITabBar
 
 @end
-
