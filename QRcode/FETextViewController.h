@@ -10,4 +10,10 @@
 
 @interface FETextViewController : UIViewController
 
+@property (nonatomic, strong) NSString *text;
+
+@property (nonatomic, strong) NSString *NavTitle;
+
+- (instancetype)initWithEntity:(Entity *)entity;
+
 @end

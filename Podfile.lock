@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (1.0.1)
+  - Toast (3.0)
+
+DEPENDENCIES:
+  - Masonry
+  - Toast (~> 3.0)
+
+SPEC CHECKSUMS:
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  Toast: 32c59229abfcf41850162b83bb9259dc84372473
+
+PODFILE CHECKSUM: 55039f79a459ed55ac8ad22d28fac4a086bfc07b
+
+COCOAPODS: 1.0.1

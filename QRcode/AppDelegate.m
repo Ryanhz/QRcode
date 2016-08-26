@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FEMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    FEMainTabBarController *mainViewController = [storyBoard instantiateViewControllerWithIdentifier:@"FEMainTabBarController"];
+    
+//    FEMainTabBarController *mainViewController = [[FEMainTabBarController alloc]init];
+    self.window.rootViewController = mainViewController;
+    
+    [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setTintColor:UIColorFromRGB(0x2d2d2d)];
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xfafafa)];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          UIColorFromRGB(0x2d2d2d), NSForegroundColorAttributeName,nil]];
+    
+    
     return YES;
 }
 
